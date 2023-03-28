@@ -1,0 +1,34 @@
+@media (max-width: 1400px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    .description ul {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    .description ul {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 992px) {
+    header {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex !important;
+        position: fixed;
+    }
+}

@@ -1,0 +1,313 @@
+/* @media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  } */
+
+
+/* Global */
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+/* Header */
+.header-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  width: 80%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header img {
+  width: 100px;
+}
+
+header ul {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 500;
+  list-style: none;
+}
+
+header ul li {
+  margin-left: 18px;
+}
+
+header ul a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Wrapper */
+.wrapper {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+}
+
+/* Container */
+.container-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.gray {
+  background-color: #E8E8E8;
+}
+
+/* .container {
+  height: 80vh;
+  width: 80%;
+  display: flex;
+} */
+
+.column {
+  height: 100%;
+  width: 50%;
+}
+
+/* Introduction */
+
+.stan-picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stan-picture img {
+  width: 80%;
+  border-radius: 50%;
+}
+
+.introduction-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Description */
+.phone-workout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone-workout img {
+  width: 100%;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.description ul {
+  font-size: 36px;
+  font-weight: 600;
+  margin-left: 30px;
+}
+
+/* Transformation */
+
+.transformation {
+  display: flex;
+  align-items: center;
+}
+
+.michael img {
+  width: 80%;
+  border-radius: 50px;
+
+}
+
+.michael-transformed,
+.michael {
+  position: relative;
+  height: max-content !important;
+}
+
+.michael-transformed img {
+  width: 110%;
+  border-radius: 50px;
+}
+
+.transformation .arrow {
+  position: absolute;
+  transform: scaleY(-1) rotate(21deg);
+  width: 50%;
+  top: 90%;
+  left: 33%;
+}
+
+.transformation-appeal {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.transformation-appeal-wrapper {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Video */
+
+.video {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.video .text {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pos-relative {
+  position: relative;
+}
+
+.workout-set {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  width: 40%;
+}
+
+/* Download */
+
+.download-appeal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.download-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.download-buttons img {
+  width: 100px;
+}
+
+/* Footer */
+
+.footer-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  width: 80%;
+  justify-content: space-around;
+}
+
+.footer-images>* {
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+/* Pulsing */
+
+.blob.red {
+  background: rgba(255, 82, 82, 1);
+  border-radius: 100px;
+  box-shadow: 0 0 0 0 rgba(255, 82, 82, 1);
+  animation: pulse-red 5s infinite;
+
+}
+
+@keyframes pulse-red {
+  0% {
+    transform: scale(0.97);
+    box-shadow: 0 0 0 0 rgba(255, 82, 82, 0.7);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(255, 82, 82, 0);
+  }
+
+  100% {
+    transform: scale(0.97);
+    box-shadow: 0 0 0 0 rgba(255, 82, 82, 0);
+  }
+}
+
+.blob.blue {
+  box-shadow: 0 0 0 0 rgba(52, 172, 224, 1);
+  animation: pulse-blue 5s infinite;
+}
+
+@keyframes pulse-blue {
+  0% {
+    transform: scale(0.95);
+  }
+
+  70% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0.95);
+  }
+}
+
+.blob.green {
+  box-shadow: 0 0 0 0 rgba(51, 217, 178, 1);
+  animation: pulse-green 5s infinite;
+}
+
+@keyframes pulse-green {
+  0% {
+    transform: scale(0.95);
+  }
+
+  70% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0.95);
+  }
+}
