@@ -30,5 +30,6 @@
     .hamburger {
         display: flex !important;
         position: fixed;
+        background-color: #fafafa;
     }
 }
